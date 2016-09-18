@@ -61,7 +61,7 @@ FileInfo::FileInfo(const QString &path, const bool isContainer)
 
     if (fi.exists())
     {
-        if (!Helper::isImageFile(fi))
+        if (!Helper::isImageFileExtension(fi))
             return;
 
         // If path is image
